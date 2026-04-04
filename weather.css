@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image: url(weather.webp);
+  background-size: cover;
+  height: 100vh;
+}
+.search-bar {
+  display: flex;
+  width: 400px;
+  border: 2px solid #334;
+  border-radius: 25px;
+  overflow: hidden;
+  margin: 20px auto;
+}
+.search-bar input {
+  flex: 1;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+.search-bar button {
+  background-color: #2d3b5e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.Weather-detials {
+  width: 600px;
+  height: 250px;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translateX(calc(50%)) translateY(calc(50% * -1));
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 30px;
+  width: 600px;
+  color: white;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  color: black;
+}
+.Weather-detials .city-name {
+  position: absolute;
+  top: 5%;
+  left: 4%;
+}
+
+.Weather-detials .temprature {
+  font-size: 32px;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translateX(calc(50%)) translateY(calc(-50%));
+}
+.Weather-detials .humidity {
+  position: absolute;
+  bottom: 5%;
+  left: 4%;
+}
+.humidity-img {
+  width: 12px;
+  position: absolute;
+  bottom: 6%;
+  left: 1%;
+}
+.Weather-detials .date {
+  position: absolute;
+  top: 5%;
+  right: 4%;
+}
+.Weather-detials .sun {
+  position: absolute;
+  bottom: 5%;
+  right: 4%;
+}
